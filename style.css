@@ -293,3 +293,135 @@ section {
      
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure all project cards are displayed in 3 columns on larger screens */
+.projects .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 30%; /* For larger screens, 3 cards in one row */
+    margin: 20px 0;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly smaller hover effect */
+}
+
+/* Email and phone styling */
+.contact .info {
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    font-size: 1em; /* Adjust email size */
+}
+
+.contact .info h3 {
+    font-size: 1.2em;
+}
+
+/* Media queries for iPhone 12 Pro (or similar screen sizes) */
+@media (max-width: 390px) {
+    /* Adjust email font size */
+    .contact .info p {
+        font-size: 0.9em; /* Smaller email text for mobile */
+    }
+
+    .project-card {
+        width: 90%; /* Make the cards larger by taking more screen width */
+        margin: 10px auto; /* Center the cards with reduced margin */
+    }
+
+    .projects .content {
+        justify-content: center; /* Center the project cards */
+    }
+}
+
+/* Other responsive adjustments */
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+
+    .project-card {
+        width: 48%; /* Two cards per row on tablets or mid-sized screens */
+        margin: 10px 1%;
+    }
+
+    .projects .content {
+        justify-content: space-between;
+    }
+}
