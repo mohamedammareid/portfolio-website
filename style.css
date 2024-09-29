@@ -97,10 +97,12 @@ section {
     transform: scale(1.1);
 }
 
+
 .social-icons a {
     color: #fff;
     font-size: 1.7em;
     padding-right: 30px;
+
 }
 
 .title {
@@ -149,6 +151,95 @@ section {
     font-weight: 700;
     margin: 10px;
 }
+.sectiontwo{
+    background-color: white;
+    width: 100%;
+    height: 820px;
+}
+.about-me-section{
+    color: #3a6cf4;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.my-brief{
+    margin-left: 80px;
+    font-size: 30px;
+    margin-top: 70px;
+}
+.my-email{
+    text-decoration: none;
+    color: rgb(0, 38, 255);
+}
+.my-email:hover{
+    color: rgb(255, 0, 0);
+}
+.sectionthree{
+    width: 100%;
+    height: 820px;
+    background-color: #020325;
+}
+
+.sectionthree{
+    width: 100%;
+    height: 820px;
+    background-color: #020325;
+}
+.myeducation{
+    padding-top: 120px;
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+}
+.sma{
+    width: 360px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 100px;
+    float: left;
+    margin-left: 370px;
+    transition: 0.7s ease;
+}
+.sma:hover{
+    transform: scale(1.1);
+}
+.mfis{
+    width: 360px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 100px;
+    float: right;
+    margin-right: 370px;
+    transition: 0.7s ease;
+}
+.mfis:hover{
+    transform: scale(1.1);
+}
+.smalogo{
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+.mfislogo{
+    width: 140px;
+    height: 140px;
+    margin-top: 20px;
+}
+.smastgs{
+    padding: 1px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.mfisstgs{
+    padding: 7px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
 
 .projects {
     background-color: #000016;
@@ -196,6 +287,11 @@ section {
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 10px;
+}
+
+.certificate {
+    text-decoration: none;
+    color: #3a6cf4;
 }
 
 .more-details {
