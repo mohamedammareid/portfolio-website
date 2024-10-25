@@ -16,6 +16,27 @@
         <nav class="navigation">
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Send Email</title>
+            <link rel="stylesheet" type="text/css" href="style.css" />
+            </head>
+            <body>
+                <button id="emailButton" onclick="openEmailClient()">Send Email</button>
+            
+                <script>
+                function openEmailClient() {
+                    const email = "mohamed.ammar.eid.mo@gmail.com";
+                    const subject = "Subject Here";
+                    const body = "Hi,\n\nWrite your message here...";
+                    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                    window.open(gmailLink, '_blank');
+                }
+                </script>
+            </body>
+            </html>
+            
         </nav>
     </header>
 
@@ -107,7 +128,7 @@
                     <strong class="project-title">
                         <span>CS50</span>
                         <a href="#" class="certificate">certificate</a>
-                        <a href="https://github.com/mohamedammareid" class="more-details">More details</a>
+                        <a href="#" class="more-details">More details</a>
                     </strong>
                 </div>
             </div>
