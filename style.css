@@ -8,7 +8,6 @@
     scroll-behavior: smooth; 
 }
 
-
 header {
     background-color: #f0f0f0;
     width: 100%;
@@ -34,6 +33,22 @@ header {
     font-size: 1.1em;
     font-weight: 500;
     padding-left: 30px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
 }
 
 .navigation a:hover{
