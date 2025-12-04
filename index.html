@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="x-icon" href="images/icon.JPG">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Mohamed Eid | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Mohamed Eid</title>
+    <link rel="shortcut icon" type="x-icon" href="images/icon.JPG">
 </head>
+
 <body>
 
     <header>
         <a href="#" class="logo">Mohamed Eid</a>
         <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Send Email</title>
-            <link rel="stylesheet" type="text/css" href="style.css" />
-            </head>
-            <body>
-                <button id="emailButton" onclick="openEmailClient()">Send Email</button>
-            
-                <script>
-                function openEmailClient() {
-                    const email = "mohamed.ammar.eid.mo@gmail.com";
-                    const subject = "Subject Here";
-                    const body = "Hi,\n\nWrite your message here...";
-                    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                    window.open(gmailLink, '_blank');
-                }
-                </script>
-            </body>
-            </html>
-            
         </nav>
     </header>
 
-
-    <section class="main">
-        <div>
-            <h2>Hello, I'm Mohamed <br><span>Information systems </span></h2>
-            <h3>Student</h3>
-            <a href="#aboutsection" class="main-btn">About Me</a>
+    <section class="main" id="home">
+        <div class="main-content">
+            <h2>Hello, I'm Mohamed <br><span>Information Systems Student</span></h2>
+            <h3>I build things for the web.</h3>
+            <a href="#projects" class="main-btn">View My Work</a>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/mohamedammareid/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mohamedammareid"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/mohamedammareid"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/mohamedammareid/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@mohamedammareid"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/mohamedammareid/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mohamedammareid" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/mohamedammareid" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mohamedammareid/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@mohamedammareid" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </section>
-    
-    </section>
-        <div  class="sectiontwo" id="aboutsection">
-            <center><h1 class="about-me-section">About Me</h1></center>
-            
-            <div class="my-brief">
-                
-<h3>My name is Mohamed Eid,</h3>
-<h3>I'm 18 years old,</h3>
-<h3>I'm now an information systems student,</h3>
-<h3>I live in Egypt</h3>
-<h3>I am passionate about technology</h3> </p> </div> </div>
-    </section>
-    <div class="sectionthree" id="myeducation">
-        <section class="cards" id="services">
-            <h2 class="title">My Education</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="info">
-                        <h3> Advanced Academy </h3>
-                        <p> Bachelor's Degree, Information systems </p>
-                    </div>
-                </div> 
-            </div>
-        </section>
-    </div>
 
-    <section class="cards" id="myskills">
-        <h2 class="title">My Skills</h2>
+    <section class="about" id="about">
+        <h2 class="title">About Me</h2>
+        <div class="content">
+            <div class="about-text">
+                <h3>I'm Mohamed Eid,</h3>
+                <p>I am an 18-year-old Information Systems student based in Egypt. I am passionate about technology and
+                    software development. I love solving problems and building efficient, scalable solutions. My journey
+                    in tech is driven by curiosity and a desire to create impact.</p>
+                <div class="education-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h4>Advanced Academy</h4>
+                        <p>Bachelor's Degree, Information Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="title">Services</h2>
         <div class="content">
             <div class="card">
-                <div class="icon">
-                    <i class="fab fa-python"></i>
-                </div>
+                <div class="icon"><i class="fas fa-laptop-code"></i></div>
                 <div class="info">
-                    <h3>Python</h3>
-                    <p></p>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and modern websites using HTML, CSS, and JavaScript.</p>
                 </div>
             </div>
             <div class="card">
-                <div class="icon">
-                   <i class="fab fa-js-square" style="color: #F7DF1E;"></i> 
-                </div>
+                <div class="icon"><i class="fas fa-code"></i></div>
                 <div class="info">
-                    <h3> javascript </h3>
+                    <h3>Scripting</h3>
+                    <p>Automating tasks and writing efficient scripts using Python.</p>
                 </div>
             </div>
-           <div class="card">
-                <div class="icon">
-                 <h3> C++ </h3>
-                </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-mobile-alt"></i></div>
                 <div class="info">
-                  
+                    <h3>App Design</h3>
+                    <p>Designing user-friendly interfaces for mobile and web applications.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="title">My Skills</h2>
+        <div class="content">
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-cuttlefish"></i>
+                <h3>C++</h3>
             </div>
         </div>
     </section>
@@ -121,119 +123,85 @@
         <div class="content">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/harvard.png" />
+                    <img src="images/harvard.png" alt="CS50 Project">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">CS50 projects</p>
-                    <strong class="project-title">
-                        <span>CS50</span>
-                        <a href="https://certificates.cs50.io/ed028926-8279-485a-9a89-9a82ec3d6207.pdf?size=letter" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-                <div class="project-card">
-                <div class="project-image">
-                    <img src="images/CS50P_pll.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">CS50P projects </p>
-                    <strong class="project-title">
-                        <span>CS50P</span>
-                        <a href="#" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>  
-                    </strong>
+                    <p class="project-category">Coursework</p>
+                    <strong class="project-title">CS50 Projects</strong>
+                    <div class="project-links">
+                        <a href="#" class="more-details">View Details</a>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/coming soon.png" />
+                    <img src="images/CS50P_pll.png" alt="CS50P Project">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">coming soon</p>
-                    <strong class="project-title">
-                        <span>coming soon</span>
-                        <a href="#" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
+                    <p class="project-category">Python</p>
+                    <strong class="project-title">CS50P Projects</strong>
+                    <div class="project-links">
+                        <a href="#" class="more-details">View Details</a>
+                    </div>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-image">
-                    <img src="images/coming soon.png" />
+                    <img src="images/coming soon.png" alt="Coming Soon">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">coming soon</p>
-                    <strong class="project-title">
-                        <span>coming soon</span>
-                        <a href="#" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/coming soon.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">coming soon</p>
-                    <strong class="project-title">
-                        <span>coming soon</span>
-                        <a href="#" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/coming soon.png" />
-                </div>
-                <div class="project-info">
-                    <p class="project-category">coming soon</p>
-                    <strong class="project-title">
-                        <span>coming soon</span>
-                        <a href="#" class="certificate">certificate</a>
-                        <a href="#" class="more-details">More details</a>
-                    </strong>
+                    <p class="project-category">Development</p>
+                    <strong class="project-title">Coming Soon</strong>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
+    <section class="contact" id="contact">
+        <h2 class="title">Contact Me</h2>
         <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
+            <div class="contact-card">
+                <div class="icon"><i class="fas fa-phone"></i></div>
                 <div class="info">
                     <h3>Phone</h3>
                     <p>01002119691</p>
                 </div>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
+            <div class="contact-card">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
                 <div class="info">
                     <h3>Email</h3>
                     <p>meid@gmail.com</p>
                 </div>
             </div>
+
+            <form class="contact-form">
+                <h3>Send Message</h3>
+                <div class="input-box">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <textarea placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="main-btn">Send</button>
+            </form>
         </div>
     </section>
-    
+
     <footer class="footer">
-        <p class="footer-title"><span>Mohamed Eid</span></p>
+        <p class="footer-title">Copyrights @ <span>Mohamed Eid</span></p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/mohamedammareid"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/mohamedammareid"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/mohamedammareid"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/mohamedammareid/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@mohamedammareid"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/mohamedammareid" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mohamedammareid" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/mohamedammareid" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/mohamedammareid/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@mohamedammareid" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
 
 </body>
+
 </html>
