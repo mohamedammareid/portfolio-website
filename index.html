@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mohamed Eid - AI Backend & Web Developer. Building scalable APIs, AI Agents, and Shopify websites.">
+    <title>Mohamed Eid | AI Backend & Web Engineer</title>
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.svg">
+</head>
+
+<body>
+
+    <!-- Animated Code Background -->
+    <canvas id="code-bg" aria-hidden="true"></canvas>
+
+    <!-- Custom Flashlight Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="flashlight-cursor"></div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <a href="#home" class="logo">Mohamed Eid</a>
+
+        <!-- Burger Menu Icon for Mobile -->
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="navigation" id="nav-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#certifications" class="nav-link">Certificates</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="main" id="home">
+            <div class="main-content">
+                <h2>Hello, I'm Mohamed <br><span>Software Engineer</span></h2>
+                <h3><span class="typing-text"></span></h3>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="main-btn">View My Work</a>
+                    <!-- تأكد أن ملف Resume.pdf موجود في نفس المجلد ليعمل التحميل -->
+                    <a href="Resume.pdf" download="Mohamed_Eid_CV.pdf" class="main-btn btn-outline">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohamedammareid/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mohamedammareid" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/mohamedammareid" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mohamedammareid/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about reveal" id="about">
+            <h2 class="title">About Me</h2>
+            <div class="content">
+                <div class="about-text">
+                    <h3>I'm Mohamed Eid,</h3>
+                    <p>Aspiring AI Backend Engineer and Web Developer with a strong foundation in building scalable
+                        systems. Passionate about web development, AI-powered applications, and e-commerce solutions.
+                        Experienced in developing automation workflows, integrating Large Language Models (LLMs),
+                        designing intelligent AI Agents, and creating high-converting Shopify websites.</p>
+                    <div class="education-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Advanced Academy</h4>
+                            <p>Bachelor's Degree, Information Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal -->
+        <div class="terminal-window" id="terminal-window">
+            <div class="term-header">
+                <span class="btn red" id="term-close" style="cursor: pointer;" title="Close"></span>
+                <span class="btn yellow"></span>
+                <span class="btn green" id="term-max" style="cursor: pointer;" title="Maximize"></span>
+                <span class="term-title">guest@mohamed-eid: ~</span>
+            </div>
+            <div class="term-body" id="term-body">
+                <p>Welcome to my interactive portfolio.</p>
+                <p>Type <span class="highlight">'help'</span> to see available commands.</p>
+                <div class="term-history" id="term-history"></div>
+                <div class="term-input-line">
+                    <span class="prompt">$</span>
+                    <input type="text" id="term-input" autocomplete="off" autofocus>
+                </div>
+            </div>
+        </div>
+        <!-- Services Section -->
+        <section class="services reveal" id="services">
+            <h2 class="title">What I Do</h2>
+            <div class="content">
+                <article class="card">
+                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="info">
+                        <h3>Web Development</h3>
+                        <p>Building responsive, fast, and modern websites and web applications tailored to your business
+                            needs.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="icon"><i class="fas fa-server"></i></div>
+                    <div class="info">
+                        <h3>Backend Architecture</h3>
+                        <p>Designing secure and scalable REST APIs and databases using Python, FastAPI, and PostgreSQL.
+                        </p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <div class="info">
+                        <h3>AI Agents & LLMs</h3>
+                        <p>Developing intelligent AI Agents, RAG workflows, and integrating smart automations using
+                            modern AI frameworks.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="icon"><i class="fab fa-shopify"></i></div>
+                    <div class="info">
+                        <h3>Shopify Websites</h3>
+                        <p>Setting up, designing, and optimizing high-converting Shopify e-commerce stores from scratch.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills reveal" id="skills">
+            <h2 class="title">Technical Core</h2>
+            <div class="content">
+                <div class="skill-card"><i class="fab fa-python"></i>
+                    <h3>Python & FastAPI</h3>
+                </div>
+                <div class="skill-card"><i class="fab fa-js"></i>
+                    <h3>JavaScript (ES6+)</h3>
+                </div>
+                <div class="skill-card"><i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                </div>
+                <div class="skill-card"><i class="fas fa-robot"></i>
+                    <h3>AI Agents & LLMs</h3>
+                </div>
+                <div class="skill-card"><i class="fas fa-database"></i>
+                    <h3>SQL & Vector DBs</h3>
+                </div>
+                <div class="skill-card"><i class="fab fa-shopify"></i>
+                    <h3>Shopify Dev</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications reveal" id="certifications">
+            <h2 class="title">Licenses & Certifications</h2>
+            <div class="content">
+                <article class="cert-card">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <div class="info">
+                        <h3>Claude 101</h3>
+                        <h4 class="issuer">Anthropic</h4>
+                        <p class="date">Issued Apr 2026</p>
+                        <p class="cert-skills"><strong>Skills:</strong> Anthropic Claude, AI</p>
+                        <a href="https://verify.skilljar.com/c/95anhtqwd8bx" target="_blank" rel="noopener noreferrer"
+                            class="view-cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                <article class="cert-card">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <div class="info">
+                        <h3>Claude Code 101</h3>
+                        <h4 class="issuer">Anthropic</h4>
+                        <p class="date">Issued Apr 2026</p>
+                        <p class="cert-skills"><strong>Skills:</strong> AI Agents, AI</p>
+                        <a href="https://verify.skilljar.com/c/cr2t5xam8d5f" target="_blank" rel="noopener noreferrer"
+                            class="view-cert-btn">Verify <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                <article class="cert-card">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <div class="info">
+                        <h3>CS50P: Python</h3>
+                        <h4 class="issuer">Harvard / CS50</h4>
+                        <p class="date">Issued Dec 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> OOP, Algorithms</p>
+                        <a href="https://certificates.cs50.io/567aaf19-8068-4102-b38c-11f2c046e686.pdf?size=letter"
+                            target="_blank" rel="noopener noreferrer" class="view-cert-btn">Verify <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+                <article class="cert-card">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <div class="info">
+                        <h3>CS50x: Comp Sci</h3>
+                        <h4 class="issuer">Harvard / CS50</h4>
+                        <p class="date">Issued Nov 2024</p>
+                        <p class="cert-skills"><strong>Skills:</strong> C, Web, Python</p>
+                        <a href="https://certificates.cs50.io/ed028926-8279-485a-9a89-9a82ec3d6207.pdf?size=letter"
+                            target="_blank" rel="noopener noreferrer" class="view-cert-btn">Verify <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects reveal" id="projects">
+            <h2 class="title">Featured Projects</h2>
+            <div class="content">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/harvard.png" alt="CS50 Projects" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Foundations</p>
+                        <strong class="project-title">CS50 & CS50P Portfolio</strong>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="more-details">View
+                                Repository</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/api-backend.png" alt="Backend API" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">Web & Backend</p>
+                        <strong class="project-title">Scalable E-Commerce API</strong>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="more-details">View Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/ai-rag.png" alt="AI RAG System" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-category">AI Engineering</p>
+                        <strong class="project-title">Smart AI Support Agent</strong>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="more-details">View Live
+                                Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact reveal" id="contact">
+            <h2 class="title">Let's Connect</h2>
+            <div class="content contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info">
+                            <h3>Phone / WhatsApp</h3>
+                            <p>+20 100 211 9691</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info">
+                            <h3>Email Address</h3>
+                            <p>meid@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info">
+                            <h3>Location</h3>
+                            <p>Giza, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secure Form Practice (Use Formspree or similar in production) -->
+                <form class="contact-form" action="#" method="POST"
+                    onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+                    <h3>Send a Message</h3>
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required autocomplete="name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required autocomplete="email">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="main-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-title">© 2026 <span>Mohamed Eid</span>. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohamedammareid" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mohamedammareid" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://twitter.com/mohamedammareid" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <!-- The Danger Button -->
+            <button id="danger-btn" style="background: none; border: 1px solid rgba(255, 95, 86, 0.4); color: #ff5f56; font-size: 10px; padding: 4px 8px; margin-top: 15px; cursor: pointer; border-radius: 4px; transition: 0.3s; opacity: 0.4;">DO NOT CLICK</button>
+        </div>
+    </footer>
+
+    <!-- AI Assistant Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <div class="bot-info">
+                <i class="fas fa-robot"></i>
+                <span>o1x Assistant</span>
+            </div>
+            <button id="close-chat" aria-label="Close Chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-msg">Hello! I'm Mohamed's snarky AI. Ask me about his skills, experience, or pricing. Don't ask me to write code though, I'm on break.</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+            <button id="send-chat" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chat-toggle" id="chat-toggle" aria-label="Open Chat">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="btt-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Terminal JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
